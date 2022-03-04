@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES11</title>
+</head>
+<body>
+
+    <script>
+
+        let teste1 = null || 'Valor à direita'
+        let teste2 = 0 || 'Valor à direita'
+        let teste3 = undefined || 'Valor à direita'
+        let teste4 = '' || 'Valor à direita'
+        let teste5 = 'Valor à esquerda' || 'Valor à direita'
+
+        console.log('Teste 1: ', teste1)
+        console.log('Teste 2: ', teste2)
+        console.log('Teste 3: ', teste3)
+        console.log('Teste 4: ', teste4)
+        console.log('Teste 5: ', teste5)
+
+        console.log('------------------')
+
+        teste1 = null ?? 'Valor à direita'
+        teste2 = 0 ?? 'Valor à direita'
+        teste3 = undefined ?? 'Valor à direita'
+        teste4 = '' ?? 'Valor à direita'
+        teste5 = 'Valor à esquerda' ?? 'Valor à direita'
+
+        console.log('Teste 1: ', teste1)
+        console.log('Teste 2: ', teste2)
+        console.log('Teste 3: ', teste3)
+        console.log('Teste 4: ', teste4)
+        console.log('Teste 5: ', teste5)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    
+</head>
+<body>
+        <script>
+
+            function* conversar() {
+                let opcao = yield 'Eai, tudo bem?'
+
+                yield 'Ótimo, fico feliz'
+
+                yield 'Terceira opção ' + opcao
+            }
+
+            let conversa = conversar()
+
+            function acao() {
+
+                let iteracao = conversa.next()
+                console.log(iteracao)
+
+                iteracao = conversa.next('sim')
+                console.log(iteracao)
+
+                iteracao = conversa.next()
+                console.log(iteracao)
+            }
+        
+        </script>
+    
+    <div id="teste">
+        <button type="button" onclick="acao()">Avançar</button>
+    </div>
+    
+</body>
+</html>

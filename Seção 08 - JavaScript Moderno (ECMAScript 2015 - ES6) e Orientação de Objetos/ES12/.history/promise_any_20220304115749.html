@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES12</title>
+</head>
+<body>
+
+    <script>
+
+        let p1 = new Promise((resolve, reject) => {
+            setTimeout(() => resolve('P1 resolvida') , 3000)
+        })
+
+        let p2 = new Promise((resolve, reject) => {
+            setTimeout(() => resolve('P2 resolvida') , 3000)
+        })
+
+        let p3 = new Promise((resolve, reject) => {
+            setTimeout(() => resolve('P3 resolvida') , 3000)
+        })
+
+        let promises = [p1, p2, p3]
+
+        Promise.any(promises)
+            .then(resolvida => {
+                console.log(resolvida);
+            })
+
+    </script>
+    
+</body>
+</html>

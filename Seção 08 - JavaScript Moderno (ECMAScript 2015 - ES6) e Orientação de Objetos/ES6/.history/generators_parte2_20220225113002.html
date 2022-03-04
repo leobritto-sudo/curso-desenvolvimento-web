@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    
+</head>
+<body>
+        <script>
+
+            function* conversar() {
+                let opcao = yield 'Eai, tudo bem?'
+
+                console.log(opcao)
+                yield 'Ótimo, fico feliz'
+            }
+
+            let conversa = conversar()
+
+            function acao() {
+
+                let resposta = document.getElementById('resposta').value
+                let iteracao = conversa.next(resposta)
+                console.log(iteracao)
+            }
+        
+        </script>
+    
+    <div id="teste">
+        Resposta: <input type="text" id="resposta">
+        <button type="button" onclick="acao()">Enviar</button>
+    </div>
+    
+</body>
+</html>

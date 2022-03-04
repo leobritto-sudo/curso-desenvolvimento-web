@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+
+    <script>
+
+        let promessa =  new Promise((resolve, reject) => {
+
+            setTimeout(() => {
+
+                let resposta_da_requisicao = {}
+
+                if(true) {
+
+                    resposta_da_requisicao = {
+                        codigo: 1050,
+                        erro: 'Erro'
+                    }
+
+                    reject(resposta_da_requisicao)
+
+                }
+
+            })
+
+        })
+        
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

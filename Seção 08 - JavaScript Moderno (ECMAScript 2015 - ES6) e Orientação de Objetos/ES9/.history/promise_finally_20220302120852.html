@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES9</title>
+</head>
+<body>
+    
+    <script>
+
+        let p = new Promise((resolve, reject) => {
+
+            if(true) {
+                reject('Rejeitada')
+            }
+
+            resolve('Resolvida')
+
+        //}).then(resultado => {
+            //console.log(resultado)
+        //}).catch(resultado => {
+            //console.log(resultado)
+        }).finally(() => {
+            console.log('Fluxo se rejeitado ou resolvido')
+        })
+
+    </script>
+
+</body>
+</html>

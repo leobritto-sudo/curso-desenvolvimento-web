@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        //01
+        document.write('<strong>Atividade 01</strong><br><br>')
+
+        var listaAlunos = Array()
+
+        listaAlunos[0] = 'Miguel'
+        listaAlunos[1] = 'Mário'
+        listaAlunos[2] = 'Julia'
+        listaAlunos[3] = 'Beatriz'
+
+        for(var i = 0; i < listaAlunos.length; i++){
+            document.write(listaAlunos[i] + '<br>')
+        }
+
+        document.write('<hr>')
+
+        //02
+        document.write('<strong>Atividade 02</strong><br><br>')
+
+        var i = 1
+
+        while(i <= 10){
+
+            var j = 1
+            
+            while(j <= 10){
+                document.write(i + ' x ' + j + ' = ' + (i * j) + '<br>')
+                j++
+            }
+            document.write('<hr>')
+            i++
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+    <script>
+
+        var n1 = parseInt(prompt('Digite um número: '))
+        var operador = prompt('Digite o operador: (soma / subtração)')
+        var n2 = parseInt(prompt("Digite o outro número"))
+
+        var resultado = calculo(n1, n2, operador)
+
+        if(resultado == undefined){
+            document.write('Valor do operador incorreto')
+        }
+        else{
+            document.write('O resultado é: ' + resultado)
+        }
+
+        function calculo(n1, n2, operador){
+
+            if(operador == 'subtração'){
+                var result = n1 - n2
+            }
+            else if(operador == 'soma'){
+                var result = n1 + n2
+            }
+
+            return result
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

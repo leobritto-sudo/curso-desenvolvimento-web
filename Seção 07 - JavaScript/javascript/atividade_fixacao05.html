@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+</head>
+<body>
+
+    <input id="palavra" type="text" name="nome">
+    <button id="add" onclick="addPalavra()" type="button">Adicionar</button>
+    <button id="order" onclick="ordenaPalavra()" type="button">Ordenar</button>
+
+    <script>
+
+        var lista_palavras = Array('Cadeira', 'Impressora', 'Garfo')
+
+        function addPalavra() {
+            var palavra = document.getElementById('palavra').value.trim()
+
+            if (palavra === '') {
+                alert('Informe um valor válido')
+            }
+            else if(lista_palavras.indexOf(palavra) !== -1 ){
+                alert('Objeto já foi adicionado')
+            }
+            else{
+                lista_palavras.push(palavra)
+                console.log(lista_palavras)
+                document.getElementById('palavra').value = ''
+            }
+
+        }
+
+        function ordenaPalavra() {
+            lista_palavras.sort()
+            console.log(lista_palavras)
+        }
+
+    </script>
+</body>
+</html>

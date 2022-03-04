@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES10</title>
+</head>
+<body>
+
+    <script>
+
+        let dados = [
+            ['nome', 'Leonardo Alves'],
+            ['profissional', [
+                ['site', 'leonardo.alves.com.br'],
+                ['profissao', 'ser explorado pelo chefe']
+            ]],
+            ['hobbies', ['correr', 'comer']],
+            ['pais', 'Brasil']
+        ]
+
+        console.log(Object.fromEntries(dados))
+
+    </script>
+    
+</body>
+</html>

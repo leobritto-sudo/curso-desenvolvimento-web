@@ -1,0 +1,546 @@
+/*Seletor Universal
+
+*{
+	border: 1px solid red;
+}*/
+
+/*Seletor de texto
+
+h1{
+	color: green;
+}*/
+
+/*Seletor de classe
+
+.verde{
+	color: green;
+}
+
+p.verde{
+	color: red;
+}*/
+
+/*Seletor de Id
+
+#cabeçalho{
+	border: 1px solid red;
+}*/
+
+/*Seletores filho
+
+li>a{
+	text-decoration: none;
+}*/
+
+/*Seletores descendentes
+
+div a{
+	color: green;
+}*/
+
+/*Seletor irmão adjacente
+
+h1+p{
+	color: red;
+}*/
+
+/*Seletor de irmão geral
+
+h1~p{
+	color: pink;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/************************
+Herança e especifidade*/
+
+
+/*Seletores iguais, o último é o mais importante, exceção ao utilizar o !important
+
+p{
+	color: red !important;
+}
+
+p{
+	color: blue;
+}*/
+
+/*Se um seletor for mais específico que o outro, a regra mais específica será aplicada
+
+*{
+	color: red;
+}
+
+h2{
+	color: blue;
+}
+
+h2.verde{
+	color: green;
+}
+
+h2#amarelo{
+	color: yellow;
+}*/
+
+
+
+
+
+
+/**************************
+Barra de navegação vertical*/
+
+/*ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	padding: 10px 20px;
+	background: url('../imagens/seta.png') no-repeat left center;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul a{
+	width: 200px;
+	height: 40px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	text-indent: 40px;
+	line-height: 40px;
+	background: #F7B600 url('../imagens/menu.png') no-repeat left;
+}
+
+ul a:hover{
+	background-position: right;
+	background-color: #F99200;
+	color: #FFF;
+}
+
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a{
+	background-position: right;
+	background-color: #F99200;
+	color: #FFF;
+}*/
+
+
+
+
+
+
+
+
+/******************************
+Barra de navegação horizontal
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+	background: #159CB0 url('../imagens/fundo-horizontal.png') repeat-x ;
+	float: left;
+}
+
+ul li{
+	float: left;
+}
+
+ul a{
+	display: block;
+	padding: 0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: #FFF;
+	background: url('../imagens/divisor.png') repeat-y;
+}
+
+ul .first a{
+	background: none;
+}
+
+ul a:hover{
+	color: #085662;
+	background-color: #44CADE;
+}
+
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a{
+	color: #085662;
+	background-color: #44CADE;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Barra de navegação com abas
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+}
+
+ul li{
+	float: left;
+	background: url('../imagens/aba-direita.png') no-repeat top right;
+}
+
+ul a{
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url('../imagens/aba-esquerda.png') no-repeat top left;
+	color: #FFF;
+}
+
+ul a:hover{
+	color: #894A1F;
+}
+
+ul #atual{
+	background: url('../imagens/aba-direita-atual.png') no-repeat top right;
+}
+
+ul #atual a{
+	background: url('../imagens/aba-esquerda-atual.png') no-repeat top left;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Layouts
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #F2F2F2;
+}
+
+#container{
+	width: 960px;
+	margin: 0 auto;
+	background: #FFF url('../imagens/coluna.png') repeat-y left top;
+	min-width: 720px;
+}
+
+#marca{
+	height: 200px;
+	background: #225992 url('../imagens/cabecalho2.jpg') no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+img.img-noticia{
+	width: 94%;
+	padding: 2%;
+}
+
+#conteudo{
+	float: right;
+	width: 75%;
+}
+
+#conteudo-principal{
+	width: 63%;
+	float: left;
+}
+
+#conteudo-secundario{
+	width: 34%;
+	float: right;
+	background: #D1D1D1;
+}
+
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+padding: 20px;
+}
+
+#navegacao{
+	width: 23%;
+	float: left;
+}
+
+#rodape{
+	clear: both;
+	background: #C4C4C4;
+	padding: 5px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li{
+	text-align: center;
+	border-bottom: 1px solid #B2BABB;
+}
+
+ul a{
+	display: block;
+	text-decoration: none;
+	line-height: 3em;
+	color: #000;
+}
+
+ul #contato{
+	border-bottom: none;
+}
+
+ul a:hover{
+	background: #2E4053;
+	color: #FFF;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilizando tabelas
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table{
+	width: 600px;
+	border-collapse: separate; collapse
+}
+
+th, td{
+	padding: 7px;
+}
+
+th{
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em;
+}
+
+tr.alternado{
+	background-color: #EFEFEF
+}
+
+tr:hover{
+	background-color: #C3E6E5;
+}
+
+.numero{
+	text-align: right;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilizando formulários
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+fieldset{
+	padding: 1em;
+	border: 1px solid #CCC;
+	background: #F8F8F8;
+	margin: 1em 0;
+}
+
+legend{
+	font-weight: bold;
+}
+
+label{
+	display: block;
+	cursor: pointer;
+}
+
+input{ /*input[type="text"]
+	width: 20em;
+	margin-bottom: 1em;
+}
+
+textarea{
+	width: 20em;
+	height: 10em;
+}
+
+input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+
+.radio{
+	margin-right: 1em;
+}*/
+
+
+
+
+
+
+
+
+
+/*Estilizando formulários 2
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #643D87 url('../imagens/fundo.jpg') no-repeat top center;
+}
+
+#container{
+	width: 400px;
+	height: 300px;
+	background-color: rgba(255,255,255,0.3);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+#container img{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
+
+input{
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #FFF;
+	padding-left: 40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+input.email{
+	background-image: url('../imagens/icone-usuario.png');
+}
+
+input.senha{
+	background-image: url('../imagens/icone-cadeado.png');
+}
+
+input.submit{
+	color: #FFF;
+	background-color: #F79300;
+	border: 2px solid #DB7D00;
+	padding: 5px 20px;
+	height: 45px;
+	width: 90%;
+	cursor: pointer;
+	background: -webkit-linear-gradient(to bottom, #FAA600, #F68A00);
+	background: -moz-linear-gradient(to bottom, #FAA600, #F68A00);
+	background: -o-linear-gradient(to bottom, #FAA600, #F68A00);
+	background: linear-gradient(to bottom, #FAA600, #F68A00);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*Arredondamento com imagens*/
+
+.caixa{
+	background: #DEDEDE url('../imagens/fundo-arredondamento.png') repeat-y;
+	width: 400px;
+	
+}
+
+.caixa h2{
+	background: url('../imagens/topo2.png') no-repeat left top;
+	padding: 10px 20px 0 20px;
+}
+
+.caixa p{
+	padding: 0 20px;
+	margin-bottom: 0;
+}
+
+.caixa .ultimo{
+	width: 400px;
+	height: 24px;
+	background: url('../imagens/baixo2.png') no-repeat left bottom;
+}

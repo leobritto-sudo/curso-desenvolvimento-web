@@ -1,0 +1,8 @@
+@import 'variables';
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background-color: $bg_green;
+        margin-bottom: 2px;
+    }
+}
